@@ -791,3 +791,8 @@ def linkedin_account_domain(nav_results, driver):
                 print(e)
     return clean_results
 
+
+def auto_connect(driver, data):
+    driver.get('')
+    wait_for_element('nav-search-controls', driver, 'class')
+

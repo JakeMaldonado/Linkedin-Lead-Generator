@@ -3,7 +3,7 @@ Complete Scrape Class
 '''
 from hubspot_utilities import company_domain_search, upload_company, update_company_format, get_format_from_domain_search
 from hunter_utilities import find_person_at_domain, find_contact_email
-from selenium_utilities import linkedin_account_scrape, linkedin_scrape, google_company_search, get_driver, linkedin_nav_headcount_scrape, linkedin_like_post, linkedin_account_domain
+from selenium_utilities import linkedin_account_scrape, linkedin_scrape, google_company_search, get_driver, linkedin_nav_headcount_scrape, linkedin_like_post, linkedin_account_domain, auto_connect
 
 from credentials import POD_ACCOUNTS
 
@@ -295,3 +295,14 @@ class KindlingMain:
     def options_interface(self):
         print('\n\n---- STARTED KINDLING ----\n\n')
         option = input('\n--- OPTIONS ---\n\n 1 - Lead Scrape\n 2 - Lead Scrape')
+
+
+class AutoConnect:
+    def __init__(self, contact_data):
+        self.contacts = contact_data
+
+    def massConnect(self):
+        driver = get_driver(True)
+        print('\n\n --- Auto-Connector Started --- \n\n')
+        auto_connect(driver, self.contacts)
+
