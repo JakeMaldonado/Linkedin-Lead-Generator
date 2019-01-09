@@ -21,4 +21,7 @@ Check the tests.py file for an example to run.
 You will also need:
  - Selenium, 
  - dnspython and tldextract via pip3,
- - Latest chromedriver from your package manager
+ - Latest chromedriver from your package manager 
+ 
+ 
+Note: you may need to add a PATH variable to your bash profile to set the default path to the chromedriver
