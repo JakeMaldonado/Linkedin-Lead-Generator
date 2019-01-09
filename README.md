@@ -13,7 +13,10 @@ POD_ACCOUNTS = {
 "accounts": []
 }
 ```
+The only required credentials are LINKEDIN_USERNAME and LINKEDIN_PASSWORD.
+Leave the other ones blank even if you don't need them.
 
+Check the tests.py file for an example to run.
 
 You will also need:
  - Selenium, 
