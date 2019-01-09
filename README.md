@@ -2,7 +2,8 @@
 
 create a credentials.py file and fill in your info:
 
-'''HUBSPOT_API_KEY = ''
+'''python
+HUBSPOT_API_KEY = ''
 HUNTER_API_KEY = ''
 KINDLING_API_KEY = ''
 LINKEDIN_USERNAME = 'YOUR EMAIL'
@@ -10,7 +11,8 @@ LINKEDIN_PASSWORD = 'YOUR PASSWORD'
 
 POD_ACCOUNTS = {
 "accounts": []
-}'''python
+}
+'''
 
 
 You will also need:
